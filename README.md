@@ -2,14 +2,10 @@
 
 # ⚽ ESP32 Soccer Robot Web Controller
 
-**Controller dua robot berbasis browser—tanpa aplikasi, router, atau internet.**
-
 [![ESP32](https://img.shields.io/badge/Board-ESP32-111111?style=for-the-badge&logo=espressif&logoColor=E7352C)](https://www.espressif.com/en/products/socs/esp32)
 [![PlatformIO](https://img.shields.io/badge/Build-PlatformIO-F5822A?style=for-the-badge&logo=platformio&logoColor=white)](https://platformio.org/)
 [![Arduino](https://img.shields.io/badge/Framework-Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/)
 [![WebSocket](https://img.shields.io/badge/Control-WebSocket-4B8BBE?style=for-the-badge)](#-arsitektur-sistem)
-
-ESP32 membuat jaringan Wi-Fi sendiri, menyajikan halaman controller, lalu mengendalikan dua motor DC melalui driver L298N secara real-time.
 
 **Robot A:** hitam–pink &nbsp;·&nbsp; **Robot B:** hitam–biru
 
