@@ -7,8 +7,6 @@
 [![Arduino](https://img.shields.io/badge/Framework-Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/)
 [![WebSocket](https://img.shields.io/badge/Control-WebSocket-4B8BBE?style=for-the-badge)](#-arsitektur-sistem)
 
-**Robot A:** hitam–pink &nbsp;·&nbsp; **Robot B:** hitam–biru
-
 </div>
 
 ---
