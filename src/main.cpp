@@ -38,9 +38,11 @@ constexpr uint16_t PWM_MAX = 255;
 constexpr uint8_t PWM_CHANNEL_LEFT = 0;
 constexpr uint8_t PWM_CHANNEL_RIGHT = 1;
 
-constexpr uint16_t COMMAND_TIMEOUT_MS = 300;
+constexpr uint16_t COMMAND_TIMEOUT_MS = 700;
 constexpr uint16_t TELEMETRY_INTERVAL_MS = 100;
 constexpr uint8_t DRIVE_SPEED_PERCENT = 100;
+constexpr float LEFT_MOTOR_SCALE = 0.92f;
+constexpr float RIGHT_MOTOR_SCALE = 1.00f;
 constexpr int8_t LEFT_DIRECTION = 1;
 constexpr int8_t RIGHT_DIRECTION = 1;
 }  // namespace Config
@@ -103,8 +105,10 @@ void driveRobot(int x, int y) {
   const float pwmScale =
       (Config::DRIVE_SPEED_PERCENT / 100.0f) * Config::PWM_MAX;
 
-  robot.leftPwm = roundf((left / largest) * pwmScale);
-  robot.rightPwm = roundf((right / largest) * pwmScale);
+  robot.leftPwm =
+      roundf((left / largest) * pwmScale * Config::LEFT_MOTOR_SCALE);
+  robot.rightPwm =
+      roundf((right / largest) * pwmScale * Config::RIGHT_MOTOR_SCALE);
   applyMotorOutput();
 }
 
